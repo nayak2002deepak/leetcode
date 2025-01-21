@@ -5,7 +5,10 @@ public:
         long long m=grid[0].size();
         long long second=0;
         long long pre=0;
-        long long sum=accumulate(grid[0].begin(),grid[0].end(),0LL);
+        long long sum= 0;//accumulate(grid[0].begin(),grid[0].end(),0LL);
+        for(int i=0;i<m;i++){
+            sum+=grid[0][i];
+        }
         long long ans=LLONG_MAX;
 
         
